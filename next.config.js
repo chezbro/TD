@@ -12,6 +12,9 @@ const nextConfig = {
       destination: "/posts/get-started",
     },
   ],
+  images: {
+    domains: ["uifaces.co"],
+  },
 };
 
 module.exports = withContentlayer(nextConfig);

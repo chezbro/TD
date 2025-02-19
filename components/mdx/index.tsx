@@ -4,6 +4,8 @@ import { useMDXComponent } from "next-contentlayer/hooks";
 import type { TweetProps } from "react-tweet";
 import { Tweet } from "react-tweet";
 
+import { CallToAction } from "@/components/call-to-action";
+
 import { NewsletterCTA } from "./newsletter-cta";
 import { YouTubeVideo } from "./youtube-video";
 
@@ -24,6 +26,7 @@ const components = {
   Image: (props: ImageProps) => <NextImage {...props} />,
   NewsletterCTA,
   YouTubeVideo,
+  CallToAction,
   // a: CustomLink,
   Tweet: (props: TweetProps) => {
     return (

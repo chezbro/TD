@@ -3,8 +3,11 @@ import Link from "next/link";
 import { allPages, allPosts } from "contentlayer/generated";
 import { ArrowRight } from "lucide-react";
 
+import { developers } from "@/lib/developers-data";
 import siteMetadata, { defaultAuthor } from "@/lib/metadata";
 import { sortByDate } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { DeveloperGrid } from "@/components/developer-grid";
 import { HeroImage } from "@/components/hero-image";
 import { HeroMinimal } from "@/components/hero-minimal";
 import { HeroSimple } from "@/components/hero-simple";
@@ -37,6 +40,17 @@ export default async function Home() {
         title="Building world-class software teams across borders 🌎"
         subtitle="I'm John. I help companies scale with talented offshore developers."
       />
+      <div className="container mt-12 max-w-6xl">
+        <h2 className="mb-8 font-heading text-3xl font-bold">Available Developers</h2>
+        <DeveloperGrid>{developers.slice(0, 3)}</DeveloperGrid>
+        <div className="mt-8 text-center">
+          <Button asChild>
+            <Link href="/developers">
+              View All Developers <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
       <div className="container mt-12 max-w-6xl">
         <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
           <div className="col-span-1 w-full lg:col-span-2">
