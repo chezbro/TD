@@ -8,13 +8,13 @@ export const BASE_URL =
   `http://localhost:${process.env.PORT || 3000}`;
 
 export const defaultAuthor: AuthorType = {
-  name: "Amy Shields",
-  handle: "@amyshieldsfake",
+  name: "John Smith",
+  handle: "@offshorecoding",
   socialProfiles,
-  email: "definitelyfake@nevermind.com",
+  email: "john@offshorecoding.com",
   website: "https://nextjs.org",
-  jobTitle: "Frontend Engineer & UI Designer",
-  company: "Unicorns & Co.",
+  jobTitle: "Offshore Development Agency Founder",
+  company: "Global Dev Solutions",
   availableForWork: true,
   location: {
     city: "Los Angeles",
@@ -23,7 +23,7 @@ export const defaultAuthor: AuthorType = {
 };
 
 const defaultTitle = `${defaultAuthor.name}'s Blog`;
-const defaultDescription = `I'm ${defaultAuthor.name}. Building hackin’ cool digital products around the world 🌴.`;
+const defaultDescription = `I'm ${defaultAuthor.name}. Helping companies build amazing products with talented offshore developers 🌎.`;
 
 const siteMetadata: SiteMetaData = {
   title: {
@@ -31,15 +31,15 @@ const siteMetadata: SiteMetaData = {
     default: defaultTitle,
   },
   description: defaultDescription,
-  siteRepo: "https://github.com/thedevdavid/digital-garden",
+  siteRepo: "https://github.com/yourusername/your-repo",
   newsletterProvider: "mailerlite",
-  newsletterUrl: "https://developreneur.davidlevai.com",
+  newsletterUrl: "https://your-newsletter-url.com",
   analyticsProvider: "umami",
   defaultTheme: "system",
   activeAnnouncement: true,
   announcement: {
-    buttonText: "Support on DevHunt →",
-    link: "https://devhunt.org/tool/modern-developer-blog-template-digital-garden-starter",
+    buttonText: "Learn More About Offshore Development →",
+    link: "https://your-landing-page.com",
   },
   postsPerPage: 10,
   postsOnHomePage: 8,

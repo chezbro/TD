@@ -34,8 +34,8 @@ export default async function Home() {
   return (
     <div className="pb-10">
       <HeroSimple
-        title="Building hackin’ cool digital products around the world 🌴."
-        subtitle="I'm Amy. Frontend engineer writing code and blog on the internet."
+        title="Building world-class software teams across borders 🌎"
+        subtitle="I'm John. I help companies scale with talented offshore developers."
       />
       <div className="container mt-12 max-w-6xl">
         <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
@@ -59,19 +59,18 @@ export default async function Home() {
       </div>
       {siteMetadata.newsletterUrl && (
         <NewsletterSubscribe
-          title="I also write deep dives in email"
-          description="I write about coding, design, digital nomad life, and solopreneurship. Join over 1,000 other developers in
-            getting better in business. Unsubscribe whenever."
-          buttonText="Send me the emails"
+          title="Get offshore development insights in your inbox"
+          description="I share strategies for building and managing successful offshore development teams. Join over 1,000 companies learning how to scale with overseas talent. Unsubscribe whenever."
+          buttonText="Send me the insights"
         />
       )}
       {aboutPage && (
         <div className="container max-w-6xl">
-          <h2 className="mb-8 font-heading text-4xl font-bold">Who&apos;s this girl again?</h2>
+          <h2 className="mb-8 font-heading text-4xl font-bold">About Our Offshore Development Agency</h2>
           <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
             <div className="col-span-1 mx-auto flex flex-col items-center justify-center">
               <Image
-                src="/avatar-home.png"
+                src="/eric-square.jpg"
                 alt={defaultAuthor.name}
                 width={400}
                 height={498}
@@ -79,8 +78,8 @@ export default async function Home() {
               />
               <div className="text-center">
                 <h1 className="font-heading text-2xl font-bold">{defaultAuthor.name}</h1>
-                <p className="text-muted-foreground">{defaultAuthor.jobTitle}</p>
-                <p className="text-muted-foreground">{defaultAuthor.company}</p>
+                <p className="text-muted-foreground">Offshore Development Expert</p>
+                <p className="text-muted-foreground">Global Dev Solutions</p>
               </div>
             </div>
             <div className="col-span-1 lg:col-span-2">

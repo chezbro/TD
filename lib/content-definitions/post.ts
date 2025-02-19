@@ -7,20 +7,21 @@ import { Author } from "./author";
 import { Series } from "./series";
 
 export const tagOptions = [
-  "starter",
-  "development",
-  "docs",
-  "freelancing",
-  "opinion",
-  "jamstack",
-  "frontend",
-  "development",
-  "javascript",
-  "typescript",
-  "react",
-  "nextjs",
-  "gatsby",
-  "tailwindcss",
+  "offshore-development",
+  "team-management",
+  "hiring",
+  "remote-work",
+  "cultural-integration",
+  "cost-optimization",
+  "case-studies",
+  "best-practices",
+  "communication",
+  "project-management",
+  "scaling",
+  "leadership",
+  "technology",
+  "processes",
+  "tools",
 ];
 
 export const Post = defineDocumentType(() => ({

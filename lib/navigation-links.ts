@@ -6,7 +6,7 @@ const content: ContentNavItem[] = [
   {
     title: "Blog",
     href: "/posts",
-    description: "Blogposts. Mostly about web development. Or chicken fingers",
+    description: "Articles about offshore development and team building",
   },
   {
     title: "Speaking",
@@ -27,6 +27,11 @@ const content: ContentNavItem[] = [
     title: "Teaching",
     href: "/teaching",
     description: "I teach others. Sometimes for free, sometimes for money.",
+  },
+  {
+    title: "Available Developers",
+    href: "/developers",
+    description: "Browse our pre-vetted offshore development talent",
   },
 ];
 
