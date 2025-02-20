@@ -12,7 +12,7 @@ export function WorkAvailabilityBadge() {
       >
         <div className="m-auto h-2 w-2 rounded-full bg-green-500 dark:bg-green-400"></div>
       </div>
-      <span className="inline whitespace-nowrap sm:hidden md:inline">I&apos;m available for work</span>
+      <span className="inline whitespace-nowrap sm:hidden md:inline">We&apos;re available for work</span>
     </Badge>
   );
 }

@@ -6,50 +6,41 @@ const content: ContentNavItem[] = [
   {
     title: "Blog",
     href: "/posts",
-    description: "Articles about offshore development and team building",
+    description: "Articles about AI and chat technology",
   },
   {
-    title: "Speaking",
-    href: "/speaking",
-    description: "My previous (and current) talks, workshops, and other speaking engagements.",
+    title: "Documentation",
+    href: "/docs",
+    description: "Learn how to use and integrate our chat solutions",
   },
   {
-    title: "Videos",
-    href: defaultAuthor.socialProfiles.find((platform) => platform.name === "youtube")?.link as string,
-    description: "My YouTube channel where I talk about web development.",
+    title: "Pricing",
+    href: "/pricing",
+    description: "View our pricing plans and features",
   },
   {
-    title: "Newsletter",
-    href: siteMetadata.newsletterUrl as string,
-    description: "My newsletter about software development",
+    title: "Demo",
+    href: "/demo",
+    description: "Try out our AI chat capabilities",
   },
   {
-    title: "Teaching",
-    href: "/teaching",
-    description: "I teach others. Sometimes for free, sometimes for money.",
-  },
-  {
-    title: "Available Developers",
-    href: "/developers",
-    description: "Browse our pre-vetted offshore development talent",
+    title: "Enterprise",
+    href: "/enterprise",
+    description: "Custom AI solutions for businesses",
   },
 ];
 
 export const navigationLinks: NavItem[] = [
   {
-    title: "Content",
+    title: "Solutions",
     content,
   },
   {
-    title: "Projects",
-    href: "/projects",
+    title: "About",
+    href: "/about",
   },
   {
-    title: "Uses",
-    href: "/uses",
-  },
-  {
-    title: "Now",
-    href: "/now",
+    title: "Contact",
+    href: "/contact",
   },
 ];
