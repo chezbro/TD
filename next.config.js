@@ -15,6 +15,9 @@ const nextConfig = {
   images: {
     domains: ["uifaces.co"],
   },
+  onError(err) {
+    process.exit(1);
+  },
 };
 
 module.exports = withContentlayer(nextConfig);
