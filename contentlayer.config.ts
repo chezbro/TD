@@ -1,4 +1,4 @@
-import { makeSource } from "contentlayer/source-files";
+import { defineDocumentType, makeSource } from "contentlayer/source-files";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeKatex from "rehype-katex";
 import rehypePrettyCode from "rehype-pretty-code";
@@ -11,7 +11,7 @@ import { Post } from "./lib/content-definitions/post";
 
 export const HEADING_LINK_ANCHOR = `anchor-heading-link`;
 
-export default makeSource({
+const contentSource = makeSource({
   contentDirPath: "./content",
   documentTypes: [Post, Page],
   mdx: {
@@ -64,3 +64,5 @@ export default makeSource({
     console.log("allDocuments", allDocuments.length);
   },
 });
+
+export default contentSource;

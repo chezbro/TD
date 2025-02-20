@@ -6,18 +6,10 @@ const { withContentlayer } = require("next-contentlayer");
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  rewrites: async () => [
-    {
-      source: "/posts/test",
-      destination: "/posts/get-started",
-    },
-  ],
   images: {
     domains: ["uifaces.co"],
   },
-  onError(err) {
-    process.exit(1);
-  },
 };
 
+// Export the config wrapped with withContentlayer
 module.exports = withContentlayer(nextConfig);
