@@ -36,7 +36,7 @@ const siteMetadata: SiteMetaData = {
   newsletterUrl: "https://your-newsletter-url.com",
   analyticsProvider: "umami",
   defaultTheme: "system",
-  activeAnnouncement: true,
+  activeAnnouncement: false,
   announcement: {
     buttonText: "Learn More About Offshore Development →",
     link: "https://your-landing-page.com",

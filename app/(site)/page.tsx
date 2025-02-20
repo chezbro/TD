@@ -37,23 +37,15 @@ export default async function Home() {
   return (
     <div className="pb-10">
       <HeroSimple
-        title="Building world-class software teams across borders 🌎"
-        subtitle="I'm John. I help companies scale with talented offshore developers."
+        title="Offshore Development Insights & Strategies"
+        subtitle="Learn how to build and scale successful development teams across borders. Join 1,000+ companies getting it right."
       />
-      <div className="container mt-12 max-w-6xl">
-        <h2 className="mb-8 font-heading text-3xl font-bold">Available Developers</h2>
-        <DeveloperGrid>{developers.slice(0, 3)}</DeveloperGrid>
-        <div className="mt-8 text-center">
-          <Button asChild>
-            <Link href="/developers">
-              View All Developers <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
-      </div>
+
+      {/* Blog Posts Section First */}
       <div className="container mt-12 max-w-6xl">
         <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
           <div className="col-span-1 w-full lg:col-span-2">
+            <h2 className="mb-8 font-heading text-3xl font-bold">Latest Insights</h2>
             <div className="grid grid-flow-row gap-2">
               {posts.map((post) => (
                 <PostPreview key={post._id} post={post} />
@@ -71,13 +63,17 @@ export default async function Home() {
           </aside>
         </div>
       </div>
-      {siteMetadata.newsletterUrl && (
+
+      {/* Newsletter Section */}
+      {siteMetadata.newsletterProvider && (
         <NewsletterSubscribe
           title="Get offshore development insights in your inbox"
           description="I share strategies for building and managing successful offshore development teams. Join over 1,000 companies learning how to scale with overseas talent. Unsubscribe whenever."
           buttonText="Send me the insights"
         />
       )}
+
+      {/* About Section */}
       {aboutPage && (
         <div className="container max-w-6xl">
           <h2 className="mb-8 font-heading text-4xl font-bold">About Our Offshore Development Agency</h2>
@@ -110,6 +106,19 @@ export default async function Home() {
           </div>
         </div>
       )}
+
+      {/* Developers Section Last */}
+      <div className="container mt-12 max-w-6xl">
+        <h2 className="mb-8 font-heading text-3xl font-bold">Pre-Vetted Developers</h2>
+        <DeveloperGrid>{developers.slice(0, 3)}</DeveloperGrid>
+        <div className="mt-8 text-center">
+          <Button asChild>
+            <Link href="/developers">
+              View All Developers <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }
