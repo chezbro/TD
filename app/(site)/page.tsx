@@ -47,8 +47,8 @@ export default async function Home() {
                   Offshore Development Insights & Strategies
                 </h1>
                 <p className="text-lg text-slate-300 sm:text-xl">
-                  Learn how to build and scale successful development teams across borders. Join 1,000+ companies
-                  getting it right.
+                  Learn how to build and scale successful development teams across borders. Join 500+ companies getting
+                  it right.
                 </p>
               </div>
               <div className="flex flex-col gap-4 sm:flex-row">
