@@ -65,7 +65,7 @@ export default async function Home() {
               <div className="absolute -left-16 top-1/2 h-72 w-72 -translate-y-1/2 rounded-full bg-purple-500/20 blur-3xl"></div>
               <div className="relative aspect-square rounded-2xl border border-slate-700/50 bg-slate-800/50 p-4 backdrop-blur-sm">
                 <Image
-                  src="/avatar-hero-image.jpg"
+                  src="/TD1.jpg"
                   alt={defaultAuthor.name}
                   width={500}
                   height={500}
